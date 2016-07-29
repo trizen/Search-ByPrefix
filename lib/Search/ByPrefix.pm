@@ -132,6 +132,7 @@ sub search {
 This example illustrates how to add some key/value pairs to the table
 and how to search the table with a given prefix:
 
+    use 5.010;
     use Search::ByPrefix;
     my $obj = Search::ByPrefix->new;
 

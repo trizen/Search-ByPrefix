@@ -18,6 +18,7 @@ Then, this table can be efficiently searched with an array prefix-key, which fin
 This example illustrates how to add some key/value pairs to the table and how to search the table with a given prefix:
 
 ```perl
+    use 5.010;
     use Search::ByPrefix;
     my $obj = Search::ByPrefix->new;
 
