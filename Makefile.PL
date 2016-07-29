@@ -22,7 +22,7 @@ WriteMakefile(
               PREREQ_PM  => {},
               META_MERGE => {
                              resources => {
-                                           repository => 'http://github.com/trizen/Search-ByPrefix',
+                                           repository => 'https://github.com/trizen/Search-ByPrefix',
                                           },
                             },
               dist  => {COMPRESS => 'gzip -9f', SUFFIX => 'gz',},
