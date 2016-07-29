@@ -14,7 +14,7 @@ foreach my $pair (
                   [["", "home", "user1", "tmp",  "covert",   "operator"], "/home/user1/tmp/covert/operator"],
                   [["", "home", "user1", "tmp",  "coven",    "members"],  "/home/user1/tmp/coven/members"],
                   [["", "home", "user1", "tmp2", "coven",    "members"],  "/home/user1/tmp2/coven/members"],
-                  [["", "home", "user2", "tmp2", "coven",    "members"],  "/home/user2/tmp2/coven/members"],
+                  [["", "home", "user2", "tmp",  "coven",    "members"],  "/home/user2/tmp/coven/members"],
   ) {
     $obj->add(@{$pair});
 }

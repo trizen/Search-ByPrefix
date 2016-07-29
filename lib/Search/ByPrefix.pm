@@ -144,8 +144,8 @@ and how to search the table with a given prefix:
                      /home/user1/tmp/coverage/test
                      /home/user1/tmp/covert/operator
                      /home/user1/tmp/coven/members
+                     /home/user2/tmp/coven/members
                      /home/user1/tmp2/coven/members
-                     /home/user2/tmp2/coven/members
                      )
       ) {
         $obj->add(make_key($dir), $dir);
