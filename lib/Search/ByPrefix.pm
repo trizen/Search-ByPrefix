@@ -82,10 +82,12 @@ or:
 sub add {
     my ($self, $key, $value) = @_;
 
-    my $ref = $self->{table};
+    my $vref = \$value;
+    my $ref  = $self->{table};
+
     foreach my $item (@$key) {
         $ref = $ref->{$item} //= {};
-        push @{$ref->{values}}, \$value;
+        push @{$ref->{values}}, $vref;
     }
 
     $self;
