@@ -12,11 +12,11 @@ Search::ByPrefix - An efficient, tree-based, multi-match prefix searcher.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -203,7 +203,7 @@ L<http://search.cpan.org/dist/Search-ByPrefix/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2016 Daniel Șuteu.
+Copyright 2016-2017 Daniel Șuteu.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
