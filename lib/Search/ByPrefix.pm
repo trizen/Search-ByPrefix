@@ -12,11 +12,11 @@ Search::ByPrefix - An efficient, tree-based, multi-match prefix searcher.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -87,7 +87,7 @@ sub add {
 
     foreach my $item (@$key) {
         $ref = $ref->{$item} //= {};
-        push @{$ref->{values}}, $vref;
+        push @{$ref->{$ref}}, $vref;
     }
 
     $self;
@@ -126,7 +126,7 @@ sub search {
         }
     }
 
-    map { $$_ } @{$ref->{values}};
+    map { $$_ } @{$ref->{$ref}};
 }
 
 =head1 EXAMPLE
